@@ -1,0 +1,25 @@
+#include <stdio.h>
+#define PI 3.1416  
+
+int main() {
+    float radius, height;
+    float volume, surfaceArea;
+    printf("joseph mungai\n");
+    printf("CT101/G/26468/25\n");
+    printf("=== Cylinder Volume & Surface Area Calculator ===\n");
+
+    printf("Enter the radius of the cylinder: ");
+    scanf("%f", &radius);
+
+    printf("Enter the height of the cylinder: ");
+    scanf("%f", &height);
+
+    volume = PI * radius * radius * height;
+    surfaceArea = (2 * PI * radius * radius) + (2 * PI * radius * height);
+
+    printf("\n--- Results ---\n");
+    printf("Volume of the cylinder = %.2f cubic units\n", volume);
+    printf("Surface area of the cylinder = %.2f square units\n", surfaceArea);
+
+    return 0;
+}
